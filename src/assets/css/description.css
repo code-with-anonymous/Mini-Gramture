@@ -131,6 +131,14 @@ body {
     white-space: nowrap; /* Prevents table from breaking into multiple lines */
   }
 
+  table {
+    display: block !important;
+    overflow-x: auto !important;;
+    white-space: nowrap;
+    max-width: 100%;
+    border-collapse: collapse;
+  }
+
   /* Fix for v:shape (removes margins & positioning issues) */
   v\:shape {
     position: static !important; /* Removes absolute positioning */
@@ -144,6 +152,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  
   .description-container {
     max-width: 800px;
     margin: 0 auto;
@@ -160,8 +169,8 @@ body {
   }
 }
 table {
-  display: block;
-  overflow-x: auto;
+  /* display: block; */
+  /* overflow-x: hidden !important; */
   white-space: nowrap;
   max-width: 100%;
   border-collapse: collapse;
