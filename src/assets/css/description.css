@@ -1,0 +1,173 @@
+/* === Global Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
+}
+
+/* === Main Container === */
+.description-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/* === Title === */
+.page-title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* === Product Section === */
+.product-article {
+  margin-bottom: 30px;
+}
+
+.product-description {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+/* === Table Styling (Wraps table in a scrollable container) === */
+.table-container {
+  width: 100% !important;
+  overflow-x: auto; /* Enables horizontal scrolling for tables */
+}
+
+.product-description table {
+  width: 100%; /* Ensures the table fills its container */
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.product-description table td,
+.product-description table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.product-description table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* === Responsive Images === */
+.product-description img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+/* === File Preview Section === */
+.file-preview {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* === Comments Section === */
+.comment-section {
+  margin-top: 40px;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.replies {
+  margin-top: 10px;
+  padding-left: 20px;
+  font-style: italic;
+  color: #555;
+}
+
+.reply-form {
+  margin-top: 10px;
+}
+
+.reply-textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.reply-text {
+  margin-left: 20px;
+  font-style: italic;
+  color: #555;
+}
+
+/* === Responsive Design === */
+@media screen and (max-width: 768px) {
+  /* Ensures table remains scrollable */
+  .table-container {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap; /* Prevents table from breaking into multiple lines */
+  }
+
+  /* Fix for v:shape (removes margins & positioning issues) */
+  v\:shape {
+    position: static !important; /* Removes absolute positioning */
+    left: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    text-align: left !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .description-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .page-title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .description-container {
+    padding: 40px;
+  }
+}
+table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
